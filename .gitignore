@@ -10,9 +10,9 @@ student_details.txt
 
 
 # Ignore images/logs
-
 *.jpg
 *.png
+!docs/banner.png
 
 # Ignore Python cache and environment
 __pycache__/
