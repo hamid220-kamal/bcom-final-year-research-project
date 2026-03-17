@@ -47,4 +47,6 @@ Numerical results and page counts will be printed to the terminal upon completio
 - **Modern Design**: Premium color palette (Navy Blue, Gold) and consistent typography.
 
 ---
-*Created by Turabiya, Veljerla Bhuvaneshwari, Yaltishetty Jayasree, and Zohara Parveen.*
+### 🤝 Credits
+- **Developed & Coded by**: **Hamid Kamal** (Software Architecture, Data Automation, & PDF Generation)
+- **Field Survey & Data Collection**: Turabiya, Veljerla Bhuvaneshwari, Yaltishetty Jayasree, and Zohara Parveen.
