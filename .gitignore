@@ -4,6 +4,16 @@ assets/
 # Ignore generated PDF output
 *.pdf
 
+# Ignore Student and Reference data
+student_details.txt
+"project reference.pdf"
+
+
+# Ignore images/logs
+
+*.jpg
+*.png
+
 # Ignore Python cache and environment
 __pycache__/
 *.pyc
