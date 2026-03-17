@@ -1,0 +1,15 @@
+# Ignore assets containing private photographs
+assets/
+
+# Ignore generated PDF output
+*.pdf
+
+# Ignore Python cache and environment
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Ignore IDE settings
+.vscode/
+.idea/
