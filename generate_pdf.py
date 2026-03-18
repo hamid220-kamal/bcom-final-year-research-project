@@ -48,6 +48,12 @@ class Doc(FPDF):
         return super().normalize_text(t.encode('latin-1','replace').decode('latin-1'))
 
     def header(self):
+        # Draw the four-side black pen margin on every page
+        self.set_draw_color(0, 0, 0)
+        self.set_line_width(0.5)
+        # Margin at 7mm from each edge for a professional look
+        self.rect(7, 7, 196, 283) 
+        
         if self.page_no()>8:
             self.set_font('Times','I',8); self.set_text_color(*NAVY)
             self.cell(100,8,'Impact of GST on Sole Trading Concern Business',align='L')
