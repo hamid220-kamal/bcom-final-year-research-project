@@ -26,13 +26,13 @@ LOGO = next((os.path.join(ASSETS, f) for f in
              ["ref_img_0_0.png","ref_img_1_0.png","vignan_logo.png","logo.png"]
              if os.path.exists(os.path.join(ASSETS,f)) and os.path.getsize(os.path.join(ASSETS,f)) > 4000), None)
 
-NAVY  = (26,  58, 107); GOLD   = (180,130, 20)
-RED   = (180,  30,  30); GREEN  = (30, 120, 60)
-GRAY  = (120, 120, 120); BLACK  = (0,   0,  0)
+NAVY  = (0, 0, 0); GOLD   = (128, 128, 128)
+RED   = (64, 64, 64); GREEN  = (160, 160, 160)
+GRAY  = (128, 128, 128); BLACK  = (0, 0, 0)
 WHITE = (255, 255, 255)
-LNAVY = (214, 228, 247)
-LGOLD = (255, 248, 220)
-LRED  = (255, 235, 235)
+LNAVY = (235, 235, 235)
+LGOLD = (245, 245, 245)
+LRED  = (220, 220, 220)
 
 class Doc(FPDF):
     def __init__(self):

@@ -8,9 +8,9 @@ import numpy as np
 ASSETS = r"c:\Users\HAMID KAMAL\Downloads\bcom final year research project\assets"
 os.makedirs(ASSETS, exist_ok=True)
 
-NAVY = '#1A3A6B'; GOLD = '#B48214'; RED = '#B41E1E'
-GREEN = '#1E7840'; LIGHT = '#D6E4F7'; GRAY = '#787878'
-COLORS = ['#1A3A6B','#B48214','#B41E1E','#1E7840','#5B8DB8','#E8C56B','#A0522D']
+NAVY = '#000000'; GOLD = '#808080'; RED = '#404040'
+GREEN = '#A0A0A0'; LIGHT = '#E0E0E0'; GRAY = '#787878'
+COLORS = ['#000000','#404040','#808080','#A0A0A0','#606060','#C0C0C0','#202020']
 
 plt.rcParams.update({'font.family':'DejaVu Serif','font.size':10})
 
@@ -33,7 +33,7 @@ wedges,texts,autotexts = ax.pie(sizes,labels=labels,colors=wedge_colors,
 for at in autotexts: at.set_color('white'); at.set_fontsize(9)
 ax.set_title('Figure 1: GST Awareness Levels Among Sole Traders (n=50)',
              fontsize=12, fontweight='bold', color=NAVY, pad=14)
-fig.patch.set_facecolor('#F8FAFC')
+fig.patch.set_facecolor('#FFFFFF')
 save('awareness_chart.png')
 
 # ─── Fig 2: Pricing Impact (Bar) ─────────────────────────────────────────────
@@ -45,7 +45,7 @@ for b in bars:
     ax.text(b.get_x()+b.get_width()/2, b.get_height()+1, f'{b.get_height()}%',
             ha='center', fontweight='bold', color=NAVY, fontsize=11)
 ax.set_ylabel('Percentage of Respondents (%)', fontsize=10, color=GRAY)
-ax.set_ylim(0,65); ax.set_facecolor('#F8FAFC')
+ax.set_ylim(0,65); ax.set_facecolor('#FFFFFF')
 ax.yaxis.grid(True, linestyle='--', alpha=0.5); ax.set_axisbelow(True)
 ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
 ax.set_title('Figure 2: Impact of GST on Pricing of Goods/Services (n=50)',
@@ -62,7 +62,7 @@ for b in bars:
     ax.text(b.get_width()+0.8, b.get_y()+b.get_height()/2,
             f'{b.get_width()}%', va='center', fontweight='bold', color=NAVY, fontsize=11)
 ax.set_xlabel('Percentage of Respondents (%)', fontsize=10, color=GRAY)
-ax.set_xlim(0,58); ax.set_facecolor('#F8FAFC')
+ax.set_xlim(0,58); ax.set_facecolor('#FFFFFF')
 ax.xaxis.grid(True, linestyle='--', alpha=0.5); ax.set_axisbelow(True)
 ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
 ax.set_title('Figure 3: Significant Challenges Under GST (n=50)',
@@ -80,7 +80,7 @@ for i,(xi,yi) in enumerate(zip(x,vals)):
     ax.text(xi, yi+2.5, f'{yi}%', ha='center', fontweight='bold', color=NAVY, fontsize=11)
 ax.set_xticks(x); ax.set_xticklabels(benefits, fontsize=10)
 ax.set_ylabel('% Respondents Agreeing', fontsize=10, color=GRAY)
-ax.set_ylim(0,100); ax.set_facecolor('#F8FAFC')
+ax.set_ylim(0,100); ax.set_facecolor('#FFFFFF')
 ax.yaxis.grid(True, linestyle='--', alpha=0.5); ax.set_axisbelow(True)
 ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
 ax.set_title('Figure 4: Economic Benefits Observed Post-GST (n=50)',
@@ -113,7 +113,7 @@ for b in list(b1)+list(b2):
             ha='center', fontsize=9, fontweight='bold', color='white' if b.get_height()>3 else NAVY)
 ax.set_ylabel('Effective Tax Rate (%)', fontsize=10, color=GRAY)
 ax.set_xticks(x); ax.set_xticklabels(categories)
-ax.legend(fontsize=9); ax.set_facecolor('#F8FAFC')
+ax.legend(fontsize=9); ax.set_facecolor('#FFFFFF')
 ax.yaxis.grid(True, linestyle='--', alpha=0.5); ax.set_axisbelow(True)
 ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
 ax.set_title('Figure 6: Pre-GST vs Post-GST Effective Tax Rate Comparison',
@@ -133,7 +133,7 @@ p3 = ax.bar(x, time_cost, bottom=[a+b for a,b in zip(acc_fees,software)],
             color=RED, label='Time Cost (Rs equivalent)')
 ax.set_ylabel('Monthly Compliance Cost (Rs)', fontsize=10, color=GRAY)
 ax.set_xticks(x); ax.set_xticklabels(trader_types)
-ax.legend(fontsize=8, loc='upper left'); ax.set_facecolor('#F8FAFC')
+ax.legend(fontsize=8, loc='upper left'); ax.set_facecolor('#FFFFFF')
 ax.yaxis.grid(True, linestyle='--', alpha=0.5); ax.set_axisbelow(True)
 ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
 ax.set_title('Figure 7: Monthly GST Compliance Cost by Trader Type',
